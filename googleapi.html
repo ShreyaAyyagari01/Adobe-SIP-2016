@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 37.764172, lng: -121.893210},
+            zoom: 14
+        });
+
+
+        var marker = new google.maps.Marker({
+          position: {lat: 37.752853, lng: -121.891122},
+          map: map,
+          title: 'HOME'
+        
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 37.769447, lng: -121.901526},
+          map: map,
+          title: 'SCHOOL'
+        
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 37.774190, lng: -121.921662},
+          map: map,
+          title: 'SAFEWAY'
+        
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 37.771315, lng: -121.933670},
+          map: map,
+          title: 'BRIDGES GOLF COURSE'
+        
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 37.774926, lng: -121.924037},
+          map: map,
+          title: 'T4'
+        
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 37.769447, lng: -121.901526},
+          map: map,
+          title: 'SCHOOL'
+        
+        });
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdmBM87sAX2wMUjXoGw0wGB5rf6U9VduU&callback=initMap" async defer>
+    </script>
+
+  </body>
+</html>
